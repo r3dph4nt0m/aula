@@ -1,0 +1,44 @@
+# Query: sectionheader
+# ContextLines: 1
+
+9 results - 4 files
+
+app\(app)\cafeteria\page.tsx:
+   2  import { HouseCrest } from "@/components/house-crest"
+   3  import { SectionHeading } from "@/components/ui-bits"
+   4  import { ArrowDownLeft, ArrowUpRight, CreditCard } from "lucide-react"
+
+  59        <section className="mt-10">
+  60:         <SectionHeader eyebrow="History" title="Recent transactions" />
+  61          <div className="overflow-hidden rounded-2xl border border-border bg-surface">
+
+app\(app)\profile\page.tsx:
+   5  import { Icon } from "@/components/icon"
+   6: import { SectionHeader } from "@/components/ui-bits"
+   7  
+
+  74        <section className="mt-10">
+  75:         <SectionHeader eyebrow="Achievements" title="Badge collection" />
+  76          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+
+app\(app)\reading\page.tsx:
+   3  import { HouseCrest } from "@/components/house-crest"
+   4: import { SectionHeader } from "@/components/ui-bits"
+   5  import { BookOpen, Clock, Flame, Library } from "lucide-react"
+
+  69        <section className="mt-10">
+  70:         <SectionHeader eyebrow="This year" title="Finished shelf" />
+  71          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+
+  83        <section className="mt-10">
+  84:         <SectionHeader eyebrow="Leaderboard" title="Top readers this year" />
+  85          <div className="overflow-hidden rounded-2xl border border-border bg-surface">
+
+app\(app)\smartbin\page.tsx:
+   4  import { CountUp } from "@/components/count-up"
+   5: import { SectionHeader } from "@/components/ui-bits"
+   6  import { Recycle, Package, Coins, Sprout } from "lucide-react"
+
+  61        <section className="mt-10">
+  62:         <SectionHeader eyebrow="Live standings" title="House recycling race" />
+  63          <div className="space-y-4 rounded-2xl border border-border bg-surface p-6">

@@ -1,7 +1,7 @@
 import { readingData, houses } from "@/lib/data"
 import { CountUp } from "@/components/count-up"
 import { HouseCrest } from "@/components/house-crest"
-import { SectionHeader } from "@/components/ui-bits"
+import { SectionHeading } from "@/components/ui-bits"
 import { BookOpen, Clock, Flame, Library } from "lucide-react"
 
 export default function ReadingPage() {
@@ -67,7 +67,7 @@ export default function ReadingPage() {
 
       {/* Shelf */}
       <section className="mt-10">
-        <SectionHeader eyebrow="This year" title="Finished shelf" />
+        <SectionHeading eyebrow="This year" title="Finished shelf" />
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
           {shelf.map((b) => (
             <div key={b.title} className="flex flex-col justify-end rounded-xl border border-border bg-gradient-to-br from-secondary to-muted p-4 h-44">
@@ -81,7 +81,7 @@ export default function ReadingPage() {
 
       {/* Ranking */}
       <section className="mt-10">
-        <SectionHeader eyebrow="Leaderboard" title="Top readers this year" />
+        <SectionHeading eyebrow="Leaderboard" title="Top readers this year" />
         <div className="overflow-hidden rounded-2xl border border-border bg-surface">
           {schoolRanking.map((r, i) => {
             const house = houses[r.house]

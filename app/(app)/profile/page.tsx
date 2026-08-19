@@ -3,7 +3,7 @@ import { HouseCrest } from "@/components/house-crest"
 import { XpRing } from "@/components/xp-ring"
 import { CountUp } from "@/components/count-up"
 import { Icon } from "@/components/icon"
-import { SectionHeader } from "@/components/ui-bits"
+import { SectionHeading } from "@/components/ui-bits"
 
 const tierRing: Record<string, string> = {
   gold: "border-[var(--gold)]/60 bg-[var(--gold)]/10",
@@ -72,7 +72,7 @@ export default function ProfilePage() {
 
       {/* Badges */}
       <section className="mt-10">
-        <SectionHeader eyebrow="Achievements" title="Badge collection" />
+        <SectionHeading eyebrow="Achievements" title="Badge collection" />
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
           {unlocked.map((b) => (
             <div

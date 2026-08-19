@@ -1,6 +1,6 @@
 import { cafeteriaStudent, houses } from "@/lib/data"
 import { HouseCrest } from "@/components/house-crest"
-import { SectionHeader } from "@/components/ui-bits"
+import { SectionHeading } from "@/components/ui-bits"
 import { ArrowDownLeft, ArrowUpRight, CreditCard } from "lucide-react"
 
 export default function CafeteriaPage() {
@@ -57,7 +57,7 @@ export default function CafeteriaPage() {
 
       {/* Transactions */}
       <section className="mt-10">
-        <SectionHeader eyebrow="History" title="Recent transactions" />
+        <SectionHeading eyebrow="History" title="Recent transactions" />
         <div className="overflow-hidden rounded-2xl border border-border bg-surface">
           {s.transactions.map((t) => {
             const credit = t.amount > 0

@@ -2,7 +2,7 @@ import { smartbinData, houses } from "@/lib/data"
 import { SmartBinScanner } from "@/components/smartbin-scanner"
 import { HouseCrest } from "@/components/house-crest"
 import { CountUp } from "@/components/count-up"
-import { SectionHeader } from "@/components/ui-bits"
+import { SectionHeading } from "@/components/ui-bits"
 import { Recycle, Package, Coins, Sprout } from "lucide-react"
 
 export default function SmartBinPage() {
@@ -59,7 +59,7 @@ export default function SmartBinPage() {
 
       {/* House recycling race */}
       <section className="mt-10">
-        <SectionHeader eyebrow="Live standings" title="House recycling race" />
+        <SectionHeading eyebrow="Live standings" title="House recycling race" />
         <div className="space-y-4 rounded-2xl border border-border bg-surface p-6">
           {houseRanking.map((row) => {
             const house = houses[row.house]
