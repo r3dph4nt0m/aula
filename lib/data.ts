@@ -5,7 +5,7 @@ export type House = {
   name: string
   motto: string
   element: string
-  emblem: string // lucide icon key handled in component
+  emblem: string
   className: string
   points: number
   lastPeriodPoints: number
@@ -390,6 +390,7 @@ export const navItems = [
   { href: "/", label: "Home", icon: "house", group: "student" },
   { href: "/house", label: "My House", icon: "shield", group: "student" },
   { href: "/house-cup", label: "House Cup", icon: "trophy", group: "student" },
+  { href: "/rankings", label: "Rankings", icon: "trending-up", group: "student" },
   { href: "/reading", label: "Reading", icon: "book-open", group: "student" },
   { href: "/events", label: "Events", icon: "calendar", group: "student" },
   { href: "/news", label: "News", icon: "newspaper", group: "student" },
@@ -401,4 +402,4 @@ export const serviceNav = [
   { href: "/smartbin", label: "SmartBin", icon: "recycle" },
   { href: "/cafeteria", label: "Cafeteria", icon: "utensils" },
   { href: "/admin", label: "Admin", icon: "layout-dashboard" },
-] as const
+] as const 
